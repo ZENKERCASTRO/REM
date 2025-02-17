@@ -9,10 +9,10 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Elimina barras de desplazamiento de la página */
+            overflow: hidden; /* Evita barras de desplazamiento en la página */
             display: flex;
-            justify-content: center; /* Centrar horizontalmente */
-            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
             background-color: #f4f4f4; /* Color de fondo opcional */
         }
         .container {
@@ -23,11 +23,12 @@
             align-items: center;
         }
         iframe {
-            width: 100vw; /* Máximo ancho posible */
-            height: 100vh; /* Máximo alto posible */
+            width: 95vw; /* Aumentamos un poco el ancho para mejor visualización */
+            height: 100vh;
             border: none;
             background: white;
-            overflow: hidden; /* Evita barras de desplazamiento internas */
+            transform: scale(1.2); /* Escala para centrar visualmente */
+            transform-origin: center top; /* Evita que se descentre */
         }
     </style>
 </head>
