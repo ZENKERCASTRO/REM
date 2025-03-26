@@ -1,39 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Informe de datos escalado</title>
+  <title>Datos en línea</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f3f3f3;
       padding: 2rem;
-      text-align: center;
+      background: #f7f7f7;
     }
-
-    .iframe-wrapper {
+    iframe {
       width: 100%;
-      overflow: hidden;
-    }
-
-    .iframe-scaler {
-      transform: scale(0.6);          /* Escalado al 60% */
-      transform-origin: top left;
-      width: 166.67%;                 /* 100 / 0.6 → para que no se corte horizontalmente */
-      height: 4600px;
+      height: 600px;
       border: none;
-      display: block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <h2>Informe de datos (60% escalado)</h2>
-
-  <div class="iframe-wrapper">
-    <iframe class="iframe-scaler"
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false">
-    </iframe>
-  </div>
-
+  <h2>Visualización de datos</h2>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </body>
 </html>
