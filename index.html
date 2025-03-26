@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Hoja de Google Sheets</title>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Evita barras de desplazamiento en la página */
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            background-color: #e0e0e0; /* 🔹 Fondo uniforme (gris claro) */
-        }
-        .container {
-            width: 100vw; /* Ocupa todo el ancho de la pantalla */
-            height: 100vh; /* Ocupa todo el alto de la pantalla */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #e0e0e0; /* 🔹 Mismo color de fondo */
-        }
-        iframe {
-            width: 100vw; /* Asegura que la hoja ocupe todo el ancho disponible */
-            height: 100vh; /* Asegura que la hoja ocupe todo el alto disponible */
-            border: none;
-            background: transparent; /* 🔹 Hace que el fondo del iframe sea igual */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Visualización de datos</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f3f3f3;
+      padding: 2rem;
+      text-align: center;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 1000px;
+      height: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <iframe 
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1069818017&single=true&widget=true&headers=false&chrome=false" 
-            scrolling="no">
-        </iframe>
-    </div>
+  <h2>Informe de datos</h2>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </body>
 </html>
