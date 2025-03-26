@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Visualización de datos</title>
+  <title>Informe de datos</title>
   <style>
     body {
       font-family: sans-serif;
@@ -10,14 +10,14 @@
       padding: 2rem;
       text-align: center;
     }
+
     iframe {
+      width: 100vw;         /* Ocupa todo el ancho de la ventana */
+      height: 4000px;       /* GRAN altura para evitar scroll */
       border: none;
-      width: 100vw;           /* Ocupa todo el ancho de la ventana */
-      height: 3000px;         /* Aumentalo si sigue cortado */
-      max-width: none;        /* Elimina límites artificiales */
-      overflow: hidden;       /* No permite scroll interno */
       display: block;
       margin: 0 auto;
+      overflow: hidden;     /* Por si acaso */
     }
   </style>
 </head>
