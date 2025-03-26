@@ -11,21 +11,30 @@
       text-align: center;
     }
 
+    .iframe-container {
+      width: 50%;             /* Ahora sí: marco al 50% del ancho */
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #ddd; /* Para que lo veas bien visualmente (puedes quitarlo) */
+    }
+
     iframe {
-      width: 50%;
-      max-width: 1200px;     /* No se hace más grande de 1200px */
-      height: 4600px;        /* Ajustado para mostrar toda la hoja */
+      width: 100%;            /* El iframe ocupa todo el contenedor */
+      height: 4600px;
       border: none;
       display: block;
-      margin: 0 auto;
       overflow: hidden;
     }
   </style>
 </head>
 <body>
   <h2>Informe de datos</h2>
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false">
-  </iframe>
+
+  <div class="iframe-container">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false">
+    </iframe>
+  </div>
+
 </body>
 </html>
