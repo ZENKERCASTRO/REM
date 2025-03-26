@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Informe de datos</title>
+  <title>Informe de datos escalado</title>
   <style>
     body {
       font-family: sans-serif;
@@ -11,27 +11,26 @@
       text-align: center;
     }
 
-    .iframe-container {
-      width: 50%;             /* Ahora sí: marco al 50% del ancho */
-      max-width: 1200px;
-      margin: 0 auto;
-      background-color: #ddd; /* Para que lo veas bien visualmente (puedes quitarlo) */
+    .iframe-wrapper {
+      width: 100%;
+      overflow: hidden;
     }
 
-    iframe {
-      width: 100%;            /* El iframe ocupa todo el contenedor */
-      height: 4600px;
+    .iframe-scaler {
+      transform: scale(0.8);         /* Escala al 80% */
+      transform-origin: top left;
+      width: 125%;
+      height: 4600px;                /* O lo que necesite tu hoja */
       border: none;
       display: block;
-      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <h2>Informe de datos</h2>
+  <h2>Informe de datos escalado</h2>
 
-  <div class="iframe-container">
-    <iframe 
+  <div class="iframe-wrapper">
+    <iframe class="iframe-scaler"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false">
     </iframe>
   </div>
