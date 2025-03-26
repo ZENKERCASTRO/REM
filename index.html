@@ -12,17 +12,19 @@
     }
     iframe {
       border: none;
-      width: 100%;
-      max-width: 1000px;
-      height: 600px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      width: 100vw;           /* Ocupa todo el ancho de la ventana */
+      height: 1800px;         /* Aumentalo si sigue cortado */
+      max-width: none;        /* Elimina límites artificiales */
+      overflow: hidden;       /* No permite scroll interno */
+      display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <h2>Informe de datos</h2>
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHqhUJpXZ9Kx1ueNbjz_boPEVUapS-d0KJMTPizqKC8CrCan7Yps8Bzl5Wpv1htJHB4Mm-YeBK4f6C/pubhtml?gid=1283160777&amp;single=true&amp;widget=true&amp;headers=false">
+  </iframe>
 </body>
 </html>
